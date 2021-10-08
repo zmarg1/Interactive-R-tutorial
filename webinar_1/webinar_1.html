@@ -1082,7 +1082,7 @@ summary(gapminder)</code></pre>
 </div>
 <div id="section-relationships" class="section level3">
 <h3>Relationships</h3>
-<p>Over the next few section we will be investigating whether or not there is a relationship(or correlation) between <strong>life expectancy(lifeExp)</strong> and <strong>gdpPercap</strong>. To make things simpler, let’s say I only want to investigate this for the year <strong>2007</strong>. Let’s begin.</p>
+<p>Over the next few sections we will be investigating whether or not there is a relationship(or correlation) between <strong>life expectancy(lifeExp)</strong> and <strong>GDP per Capita(gdpPercap)</strong>. To make things simpler, let’s say I only want to investigate this for the year <strong>2007</strong>. Let’s begin.</p>
 </div>
 <div id="section-test-out-understanding" class="section level3">
 <h3>Test out Understanding</h3>
@@ -1259,7 +1259,7 @@ ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent )) +
 </div>
 <div id="section-more-aesthetics" class="section level3">
 <h3>More Aesthetics</h3>
-<p>Let’s take a moment to consider other variables within this dataframe that we can <strong>visualize</strong>. Below we will are using <code>glimpse()</code> to look at gapminder_2007` variables to help us think.</p>
+<p>Let’s take a moment to consider other variables within this dataframe that we can <strong>visualize</strong>. Below we will are using <code>glimpse()</code> to look at <code>gapminder_2007</code> variables to help us think.</p>
 <pre><code>## Rows: 142
 ## Columns: 6
 ## $ country   &lt;fct&gt; &quot;Afghanistan&quot;, &quot;Albania&quot;, &quot;Algeria&quot;, &quot;Angola&quot;, &quot;Argentina&quot;, ~
@@ -1400,7 +1400,7 @@ ggplot(gapminder_2007,mapping = aes(x = continent, y = pop)) +
 <h2>Source</h2>
 <div id="section-steal-my-code" class="section level3">
 <h3>Steal my code!</h3>
-<p>This tutorial was written by Zach Margulies<a href="mailto:zjmarg@gmail.com">(zjmarg@gmail.com)</a>. You can find the source code for this tutorial here <a href="https://github.com/zjmarg/r_webinar">https://github.com/zjmarg/r_webinar</a>. This tutorial is intended to be open-source, freely available to the public, and user-friendly. So please download the code, modify it, and make your own tutorial.</p>
+<p>This tutorial was written by Zach Margulies<a href="mailto:zjmarg@gmail.com">(zjmarg@gmail.com)</a>. You can find the source code for this tutorial <a href="https://github.com/zjmarg/Interactive-R-tutorial/blob/main/webinar_1/webinar_1.Rmd">here</a>. This tutorial is intended to be open-source, freely available to the public, and user-friendly. So please download the code, modify it, and make your own tutorial.</p>
 The inspiration for this tutorial came from many sources notably the brilliant teachers and coders at <a href="https://learn.datacamp.com/">Datacamp</a> and the creators at the <a href="https://rstudio.github.io/learnr/index.html">learnr tutorials</a>. Special thanks to Gina, Alexandra, Jon, Joan, Sonney, Ricky, Amit, Dr. Cargill, Lin, and Nargis for your feedback, support, and kindness. 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
@@ -1707,17 +1707,17 @@ learnr:::store_exercise_cache("comments", list(setup = NULL, chunks = list(list(
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_comments", 
     question = structure("What will the following code return?<br/>\n<code>#(5+4)/3*4-2<\u002fcode>", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_bbcb2bc", 
+    "character")), answers = list(structure(list(id = "lnr_ans_db39c78", 
         option = "-1.25", value = "-1.25", label = structure("-1.25", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ad92f4d", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9b6a5fd", 
         option = "10", value = "10", label = structure("10", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You remembered PEMDAS, but missed the most important symbol!", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_5f0a51c", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3573980", 
         option = "1.5", value = "1.5", label = structure("1.5", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_62d5836", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8e46c5d", 
         option = "Nothing will be returned", value = "Nothing will be returned", 
         label = structure("Nothing will be returned", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = structure("the # symbol means that code on this line will not be run", html = TRUE, class = c("html", 
@@ -1731,7 +1731,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "quiz_comments-answer", question = "quiz_comments"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat will the following code return?<br/>\n<code>#(5+4)/3*4-2<\u002fcode>\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 246940199.385009, options = list()), class = c("learnr_radio", 
+    seed = 481715509.775684, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -1940,19 +1940,19 @@ learnr:::store_exercise_cache("nomenclature", list(setup = NULL, chunks = list(l
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_variables", 
     question = structure("What will the following code return?<br/>\n<code>cats &lt;- 2\n  dogs &lt;- 5\n  text &lt;- &#39;I have two cats named Meeju and Daffne&#39;\n  pets &lt;- cats + text\n  pets<\u002fcode>", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_f672736", 
+    "character")), answers = list(structure(list(id = "lnr_ans_109d7b4", 
         option = "7", value = "7", label = structure("7", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_74dc669", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_9865fcd", 
         option = "2, I have two cats named Meeju and Daffne", 
         value = "2, I have two cats named Meeju and Daffne", 
         label = structure("2, I have two cats named Meeju and Daffne", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ccc770d", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ac784af", 
         option = "2 I have two cats named Meeju and Daffne", 
         value = "2 I have two cats named Meeju and Daffne", label = structure("2 I have two cats named Meeju and Daffne", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b43ba07", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_268d874", 
         option = "Error, you cannot add a number variable to character variable", 
         value = "Error, you cannot add a number variable to character variable", 
         label = structure("Error, you cannot add a number variable to character variable", html = TRUE, class = c("html", 
@@ -1966,7 +1966,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "quiz_variables-answer", question = "quiz_variables"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat will the following code return?<br/>\n<code>cats &lt;- 2\n  dogs &lt;- 5\n  text &lt;- &#39;I have two cats named Meeju and Daffne&#39;\n  pets &lt;- cats + text\n  pets<\u002fcode>\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 1824987.49915017, options = list()), class = c("learnr_radio", 
+    seed = 1086353776.99413, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -2090,18 +2090,18 @@ learnr:::store_exercise_cache("vectors_3", list(setup = NULL, chunks = list(list
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_brackets", 
     question = structure("What will the result be from the following code?<br/>\n<code>my_receipt &lt;- c(14,2,5,5,35,20,10,1)\nmy_list &lt;- c(&#39;apples&#39;, &#39;bananas&#39;,&#39;eggplant&#39;,&#39;tofu&#39;, &#39;pasta&#39;)\nmy_receipt[1]<\u002fcode>", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_ebce8d7", 
+    "character")), answers = list(structure(list(id = "lnr_ans_516220", 
         option = "apples", value = "apples", label = structure("apples", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b9410d", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_170ee7d", 
         option = "Error, you cannot retrieve one element of numeric vector", 
         value = "Error, you cannot retrieve one element of numeric vector", 
         label = structure("Error, you cannot retrieve one element of numeric vector", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f15978a", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_68590a6", 
         option = "5", value = "5", label = structure("5", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4d1ad93", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1cc3ad8", 
         option = "14", value = "14", label = structure("14", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -2113,7 +2113,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "quiz_brackets-answer", question = "quiz_brackets"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat will the result be from the following code?<br/>\n<code>my_receipt &lt;- c(14,2,5,5,35,20,10,1)\nmy_list &lt;- c(&#39;apples&#39;, &#39;bananas&#39;,&#39;eggplant&#39;,&#39;tofu&#39;, &#39;pasta&#39;)\nmy_receipt[1]<\u002fcode>\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 725248903.66228, options = list()), class = c("learnr_radio", 
+    seed = 1789026092.16692, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -2387,16 +2387,16 @@ learnr:::store_exercise_cache("df_summary", list(setup = NULL, chunks = list(lis
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_dataframe", 
     question = structure("Name a variable found in the starwars dataframe", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_d2477df", 
+    "character")), answers = list(structure(list(id = "lnr_ans_237682", 
         option = "glimpse()", value = "glimpse()", label = structure("glimpse()", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_59997b2", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4c49c64", 
         option = "mean()", value = "mean()", label = structure("mean()", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_480715", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_2ff99ad", 
         option = "character", value = "character", label = structure("character", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1a39621", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f5667b7", 
         option = "height", value = "height", label = structure("height", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -2408,26 +2408,26 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "quiz_dataframe-answer", question = "quiz_dataframe"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nName a variable found in the starwars dataframe\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 696686523.17558, options = list()), class = c("learnr_radio", 
+    seed = 138615059.935452, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "refresher_1", 
     question = structure("What code is needed to multiple 123 x 2?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_94fb49", 
+    "character")), answers = list(structure(list(id = "lnr_ans_a156f23", 
         option = "`246`", value = "`246`", label = structure("<code>246<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You&#39;re great at math! But this is not the answer", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_6292140", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e803fcc", 
         option = "`#123 x 2`", value = "`#123 x 2`", label = structure("<code>#123 x 2<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("the # symbol means that code on this line will not be run", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3224f2b", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_bd1e6d7", 
         option = "`123 x 2`", value = "`123 x 2`", label = structure("<code>123 x 2<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("x is not the multiplication symbol", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_fb940f6", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ec5825c", 
         option = "`123 * 2`", value = "`123 * 2`", label = structure("<code>123 * 2<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -2439,29 +2439,29 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "refresher_1-answer", question = "refresher_1"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat code is needed to multiple 123 x 2?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 1437934972.83041, options = list()), class = c("learnr_radio", 
+    seed = 1167607455.45629, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "refresher_2", 
     question = structure("What code would make a new variable that adds together the variables &#39;fruits&#39; and &#39;veggies&#39; as seen below?<br/>\n<code>fruits &lt;- 4\n  veggies &lt;- 7<\u002fcode>", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_dcf49d0", 
+    "character")), answers = list(structure(list(id = "lnr_ans_d68ca99", 
         option = "`food <- 4 + 7`", value = "`food <- 4 + 7`", 
         label = structure("<code>food &lt;- 4 + 7<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You added the numbers but not the variables.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b03978c", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4642f60", 
         option = "`food -> fruits + veggies`", value = "`food -> fruits + veggies`", 
         label = structure("<code>food -&gt; fruits + veggies<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("Look at the symbol you used to do variable assignment.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3900fa7", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_48990ae", 
         option = "`food == fruits + veggies`", value = "`food == fruits + veggies`", 
         label = structure("<code>food == fruits + veggies<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("Look at the symbol you used to do variable assignment.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8502721", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d2fda05", 
         option = "`food <- fruits + veggies`", value = "`food <- fruits + veggies`", 
         label = structure("<code>food &lt;- fruits + veggies<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
@@ -2474,26 +2474,26 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "refresher_2-answer", question = "refresher_2"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat code would make a new variable that adds together the variables &#39;fruits&#39; and &#39;veggies&#39; as seen below?<br/>\n<code>fruits &lt;- 4\n  veggies &lt;- 7<\u002fcode>\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 761061204.645603, options = list()), class = c("learnr_radio", 
+    seed = 813748577.621069, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "refresher_3", 
     question = structure("What function allows us create a vector from a series of values?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_7225c6d", 
+    "character")), answers = list(structure(list(id = "lnr_ans_eaf6b81", 
         option = "`mean()`", value = "`mean()`", label = structure("<code>mean()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("This function gives you the average.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ec0e417", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d3c5944", 
         option = "`<-`", value = "`<-`", label = structure("<code>&lt;-<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("The arrow is used for variable assignment", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_141ab09", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_929e053", 
         option = "`select()`", value = "`select()`", label = structure("<code>select()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("select() is used to choose columns in a dataframe", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_43c8c09", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8bbd10f", 
         option = "`c()`", value = "`c()`", label = structure("<code>c()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -2505,30 +2505,30 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "refresher_3-answer", question = "refresher_3"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat function allows us create a vector from a series of values?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 1834584773.6457, options = list()), class = c("learnr_radio", 
+    seed = 1234770187.42502, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "refresher_4", 
     question = structure("What code do you need to find the average of my_vector?<br/>\n<code>my_vector &lt;- c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20)<\u002fcode>", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_cf439a6", 
+    "character")), answers = list(structure(list(id = "lnr_ans_99d5e72", 
         option = "`mean() <- my_vector`", value = "`mean() <- my_vector`", 
         label = structure("<code>mean() &lt;- my_vector<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("my_vector goes inside the mean function", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1d64c01", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1aa8365", 
         option = "`mean(c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20))`", 
         value = "`mean(c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20))`", 
         label = structure("<code>mean(c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20))<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You didn&#39;t take the mean of my_vector - you took the mean of the values.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c8d360b", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e15b4d", 
         option = "`average(my_vector)`", value = "`average(my_vector)`", 
         label = structure("<code>average(my_vector)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("average() is not a function", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_6424ac", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_32ca0", 
         option = "`mean(my_vector)`", value = "`mean(my_vector)`", 
         label = structure("<code>mean(my_vector)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
@@ -2541,26 +2541,26 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "refresher_4-answer", question = "refresher_4"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat code do you need to find the average of my_vector?<br/>\n<code>my_vector &lt;- c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20)<\u002fcode>\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 457098883.287147, options = list()), class = c("learnr_radio", 
+    seed = 1149211495.46486, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "refresher_5", 
     question = structure("Name a variable found in the gapminder dataframe", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_3bd27e4", 
+    "character")), answers = list(structure(list(id = "lnr_ans_6477ab9", 
         option = "summary()", value = "summary()", label = structure("summary()", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("summary() summarizes our dataframe but is not a variable.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ce794db", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b472c93", 
         option = "c()", value = "c()", label = structure("c()", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("This function combines values to make a vector", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_898ddfa", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_a98813c", 
         option = "height", value = "height", label = structure("height", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You&#39;re thinking of the starwars dataframe!", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ddd232c", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8ac17fc", 
         option = "lifeExp", value = "lifeExp", label = structure("lifeExp", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -2572,7 +2572,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "refresher_5-answer", question = "refresher_5"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nName a variable found in the gapminder dataframe\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 792011014.631191, options = list()), class = c("learnr_radio", 
+    seed = 975991059.545519, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -2653,19 +2653,19 @@ learnr:::store_exercise_cache("starwars_package", list(setup = NULL, chunks = li
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_select", 
     question = structure("What is the code to select the variables name and height from starwars?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_7004900", 
+    "character")), answers = list(structure(list(id = "lnr_ans_2cc5eed", 
         option = "`select(starwars,name,height)`", value = "`select(starwars,name,height)`", 
         label = structure("<code>select(starwars,name,height)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_34036e8", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_65e2052", 
         option = "`select(starwars,name)`", value = "`select(starwars,name)`", 
         label = structure("<code>select(starwars,name)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b774a17", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_19d523e", 
         option = "`select(dataframe,1,2)`", value = "`select(dataframe,1,2)`", 
         label = structure("<code>select(dataframe,1,2)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_60b0880", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c7f511e", 
         option = "`select(name,height)`", value = "`select(name,height)`", 
         label = structure("<code>select(name,height)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
@@ -2678,7 +2678,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "ques_select-answer", question = "ques_select"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat is the code to select the variables name and height from starwars?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 732940642.158698, options = list()), class = c("learnr_radio", 
+    seed = 2017650214.56046, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -2805,21 +2805,21 @@ learnr:::store_exercise_cache("starwars_filter", list(setup = "starwars_head <- 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_filter", 
     question = structure("How can we filter the starwars_head data to only show data for Droids?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_2f46ba5", 
+    "character")), answers = list(structure(list(id = "lnr_ans_2902e65", 
         option = "`filter(starwars_head,species == \"Droid\")`", 
         value = "`filter(starwars_head,species == \"Droid\")`", 
         label = structure("<code>filter(starwars_head,species == &quot;Droid&quot;)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_840eadf", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_626c020", 
         option = "`filter(starwars_head,species = \"Droid\")`", 
         value = "`filter(starwars_head,species = \"Droid\")`", 
         label = structure("<code>filter(starwars_head,species = &quot;Droid&quot;)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_6416e94", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_21e8a63", 
         option = "`filter(species == \"Droid\")`", value = "`filter(species == \"Droid\")`", 
         label = structure("<code>filter(species == &quot;Droid&quot;)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4dc0c60", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_aa15d1a", 
         option = "`filter(species == Droid)`", value = "`filter(species == Droid)`", 
         label = structure("<code>filter(species == Droid)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
@@ -2832,7 +2832,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "ques_filter-answer", question = "ques_filter"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nHow can we filter the starwars_head data to only show data for Droids?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 684898017.681069, options = list()), class = c("learnr_radio", 
+    seed = 2056873186.04219, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -2926,22 +2926,22 @@ learnr:::store_exercise_cache("filter_logic", list(setup = "starwars_head <- hea
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_doublefilter", 
     question = structure("How can we filter starwars_head to only show data for Humans that are above 200 height.", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_6d56f10", 
+    "character")), answers = list(structure(list(id = "lnr_ans_cc3eb72", 
         option = "`filter(starwars_head,species == \"Human\", height > 200)`", 
         value = "`filter(starwars_head,species == \"Human\", height > 200)`", 
         label = structure("<code>filter(starwars_head,species == &quot;Human&quot;, height &gt; 200)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_86d52b5", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_77254cb", 
         option = "`filter(starwars_head,species == \"Human\" AND height > 200)`", 
         value = "`filter(starwars_head,species == \"Human\" AND height > 200)`", 
         label = structure("<code>filter(starwars_head,species == &quot;Human&quot; AND height &gt; 200)<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_7a4946b", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_7c477ff", 
         option = "`Impossible. You cannot use two filters in one function`", 
         value = "`Impossible. You cannot use two filters in one function`", 
         label = structure("<code>Impossible. You cannot use two filters in one function<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3e0ab80", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c940978", 
         option = "`filter(starwars_head,species == Human & height > \"200\")`", 
         value = "`filter(starwars_head,species == Human & height > \"200\")`", 
         label = structure("<code>filter(starwars_head,species == Human &amp; height &gt; &quot;200&quot;)<\u002fcode>", html = TRUE, class = c("html", 
@@ -2955,7 +2955,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "ques_doublefilter-answer", question = "ques_doublefilter"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nHow can we filter starwars_head to only show data for Humans that are above 200 height.\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 1487706048.30723, options = list()), class = c("learnr_radio", 
+    seed = 112015960.447839, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -3286,18 +3286,18 @@ learnr:::store_exercise_cache("starwars_count_planet", list(setup = NULL, chunks
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_count_homeworld", 
     question = structure("Which homeworld are the most starwars characters from in the <code>starwars<\u002fcode> dataframe", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_d93bc6e", 
+    "character")), answers = list(structure(list(id = "lnr_ans_66c8622", 
         option = "Naboo", value = "Naboo", label = structure("Naboo", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_bd3515a", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_80f1a2e", 
         option = "Tatooine", value = "Tatooine", label = structure("Tatooine", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("Not quite, 10 characters are from Tatooine. 11 characters are from this planet.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_fa1e3e6", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c54b131", 
         option = "48", value = "48", label = structure("48", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("It&#39;s true that there are 48 unique homeworlds but you should reread the question", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4d5ac5b", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f2a4b42", 
         option = "Alderaan", value = "Alderaan", label = structure("Alderaan", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You may have forgotten to sort your dataframe", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
@@ -3310,7 +3310,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "ques_count_homeworld-answer", question = "ques_count_homeworld"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhich homeworld are the most starwars characters from in the <code>starwars<\u002fcode> dataframe\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 395813239.815685, options = list()), class = c("learnr_radio", 
+    seed = 1652995541.73026, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -3468,18 +3468,18 @@ learnr:::store_exercise_cache("starwars_summarizing", list(setup = NULL, chunks 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_max_height", 
     question = structure("What is the maximum height for the starwars characters", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_e75777a", 
+    "character")), answers = list(structure(list(id = "lnr_ans_4d6ea73", 
         option = "264", value = "264", label = structure("264", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_8996c24", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e5a1e14", 
         option = "66", value = "66", label = structure("66", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You found the minimum height. Find the max height now.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_7bc3884", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_dd2de2e", 
         option = "NA", value = "NA", label = structure("NA", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You forgot to remove NAs.", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e88c7bf", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_98a11e2", 
         option = "202", value = "202", label = structure("202", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("It seems like you found the max height of starwars_head and not starwars", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
@@ -3492,7 +3492,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "ques_max_height-answer", question = "ques_max_height"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat is the maximum height for the starwars characters\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 65480300.9695084, options = list()), class = c("learnr_radio", 
+    seed = 456646350.787357, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -3613,20 +3613,20 @@ learnr:::store_exercise_cache("gapminder_2", list(setup = NULL, chunks = list(li
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_2007", question = structure("How can we chop up the gapminder dataset to show data for the year 2007", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_6756fe2", 
+"character")), answers = list(structure(list(id = "lnr_ans_e64313b", 
     option = "`filter(gapminder,year == 2007)`", value = "`filter(gapminder,year == 2007)`", 
     label = structure("<code>filter(gapminder,year == 2007)<\u002fcode>", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_d695e11", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_9dca215", 
     option = "`filter(gapminder,year = 2007)`", value = "`filter(gapminder,year = 2007)`", 
     label = structure("<code>filter(gapminder,year = 2007)<\u002fcode>", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Remember the formatting of the filter symbols", html = TRUE, class = c("html", 
     "character"))), class = c("tutorial_question_answer", "tutorial_quiz_answer"
-)), structure(list(id = "lnr_ans_9e331d1", option = "`select(gapminder,year,2007)`", 
+)), structure(list(id = "lnr_ans_3160e78", option = "`select(gapminder,year,2007)`", 
     value = "`select(gapminder,year,2007)`", label = structure("<code>select(gapminder,year,2007)<\u002fcode>", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("You have not filtered year by anything and 2007 is not a variable in the dataframe.", html = TRUE, class = c("html", 
     "character"))), class = c("tutorial_question_answer", "tutorial_quiz_answer"
-)), structure(list(id = "lnr_ans_69afbda", option = "`count(starwars,year == 2007)`", 
+)), structure(list(id = "lnr_ans_3098444", option = "`count(starwars,year == 2007)`", 
     value = "`count(starwars,year == 2007)`", label = structure("<code>count(starwars,year == 2007)<\u002fcode>", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Remember your dataframe name!", html = TRUE, class = c("html", 
     "character"))), class = c("tutorial_question_answer", "tutorial_quiz_answer"
@@ -3638,7 +3638,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "ques_2007-answer", question = "ques_2007"), loading = structure("<strong>Loading:<\u002fstrong> \nHow can we chop up the gapminder dataset to show data for the year 2007\n<br/><br/><br/>", html = TRUE, class = c("html", 
 "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 543939725.746708, options = list()), class = c("learnr_radio", 
+    seed = 793177042.630648, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -4349,24 +4349,24 @@ learnr:::store_exercise_cache("bar_2", list(setup = "#Save code above to a new v
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "ques_ggplot", 
     question = structure("What is the best format to make a graph that compares lifeExp to year specifically for the country of Albania?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_2833b63", 
+    "character")), answers = list(structure(list(id = "lnr_ans_893644b", 
         option = "`ggplot(filter(gapminder, country == \"Albania\"),mapping = aes(x=year,y=lifeExp)) + geom_point()`", 
         value = "`ggplot(filter(gapminder, country == \"Albania\"),mapping = aes(x=year,y=lifeExp)) + geom_point()`", 
         label = structure("<code>ggplot(filter(gapminder, country == &quot;Albania&quot;),mapping = aes(x=year,y=lifeExp)) + geom_point()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_aee49bb", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ae9f97b", 
         option = "`ggplot(gapminder,mapping = aes(x=lifeExp,y=year)) + geom_point()`", 
         value = "`ggplot(gapminder,mapping = aes(x=lifeExp,y=year)) + geom_point()`", 
         label = structure("<code>ggplot(gapminder,mapping = aes(x=lifeExp,y=year)) + geom_point()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("You didn&#39;t specify that the country is Albania", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_2aecee1", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_30e7404", 
         option = "`ggplot(filter(gapminder, country = \"Albania\"),mapping = aes(x=year,y=lifeExp)) + geom_scatterplot()`", 
         value = "`ggplot(filter(gapminder, country = \"Albania\"),mapping = aes(x=year,y=lifeExp)) + geom_scatterplot()`", 
         label = structure("<code>ggplot(filter(gapminder, country = &quot;Albania&quot;),mapping = aes(x=year,y=lifeExp)) + geom_scatterplot()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = structure("geom_scatterplot is not a type of plot and theres another issue as well", html = TRUE, class = c("html", 
         "character"))), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cd54d01", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_82b8d3d", 
         option = "`ggplot(filter(gapminder, country == \"Albania\",year ==2007),mapping = aes(x=year,y=lifeExp)) + geom_scatterplot()`", 
         value = "`ggplot(filter(gapminder, country == \"Albania\",year ==2007),mapping = aes(x=year,y=lifeExp)) + geom_scatterplot()`", 
         label = structure("<code>ggplot(filter(gapminder, country == &quot;Albania&quot;,year ==2007),mapping = aes(x=year,y=lifeExp)) + geom_scatterplot()<\u002fcode>", html = TRUE, class = c("html", 
@@ -4381,7 +4381,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "ques_ggplot-answer", question = "ques_ggplot"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nWhat is the best format to make a graph that compares lifeExp to year specifically for the country of Albania?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 1492169848.30515, options = list()), class = c("learnr_radio", 
+    seed = 400560410.813475, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  <!--html_preserve-->
