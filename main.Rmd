@@ -1,5 +1,5 @@
 ---
-title: "R Interactive Tutorial"
+title: "Interactive R Tutorial"
 output: 
   learnr::tutorial:
     progressive: true
@@ -863,7 +863,7 @@ filter(starwars_head,)
 starwars_head <- head(select(starwars,name, height,homeworld,species))
 
 #Now apply the filter verb so that height is less than 100
-filter(starwars_head, height < ) 
+filter(starwars_head, height < 100) 
 ```
 
 ```{r filter_logic-solution}
@@ -1387,7 +1387,7 @@ filter(gapminder,year==2007)
 
 ```{r gapminder_2007-hint-2}
 # Save code above to a new variable, gapminder 2007
-<- filter(gapminder,year==2007)
+gapminder_2007 <- filter(gapminder,year==2007)
 ```
 
 ```{r gapminder_2007-solution}
