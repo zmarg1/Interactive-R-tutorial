@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Jeopardy
 
-*NOTE: If you're taking this tutorial on your own you're welcome to press* **Continue**\* *below to skip this warm-up.*
+*NOTE: If you're taking this tutorial on your own you're welcome to press* **Continue**\* *below to skip this activity. If, however, you are taking this tutorial as a group, then this game serves as warm-up.*
 
 Before we get started let's play a game to warm up for the day!
 A game of Jeopardy.
