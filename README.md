@@ -2,7 +2,7 @@
 
 ## Overview
 
-This interactive tutorial was designed by me, Zach Margulies, as an intro to the R programming Language for my colleagues at the Baltimore City Health Department at the Ryan White HIV/AID Office. While this tutorial was implemented as an interactive group webinar, it is easy to follow along on your own. To start the tutorial click [here](https://zmargulies.shinyapps.io/r_webinar/).
+This interactive tutorial was designed by me, Zach Margulies, as an intro to the R programming Language for my colleagues at the Baltimore City Health Department in the Ryan White HIV/AIDS Office. While this tutorial was implemented as an interactive group webinar, it is easy to follow along on your own. To start the tutorial click [here](https://zmargulies.shinyapps.io/r_webinar/).
 
 ## Installation
 
