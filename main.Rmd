@@ -330,7 +330,7 @@ question("What will the following code return?
 )
 ```
 
-## R-ecipes: Vectors and Functions:
+## R-ecipes: Vectors and Functions
 
 ### Vectors!
 
