@@ -5,6 +5,9 @@ output:
     progressive: true
     allow_skip: true
 runtime: shiny_prerendered
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ```{r setup, include=FALSE}
@@ -18,15 +21,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Ice Breaker
 
 ### Jeopardy
-*NOTE: If you're taking this tutorial on your own you're welcome to press ***Continue*** *below to skip this warm-up.*
 
-Before we get started let's play a game to warm up for the day! A game of Jeopardy. Don't worry about the reverse question answering style of the game. Answers are just fine! 
+*NOTE: If you're taking this tutorial on your own you're welcome to press* **Continue**\* *below to skip this warm-up.*
+
+Before we get started let's play a game to warm up for the day!
+A game of Jeopardy.
+Don't worry about the reverse question answering style of the game.
+Answers are just fine!
 
 ```{r embed, out.width = '100%'}
 knitr::include_url("https://jeopardylabs.com/play/movies-tv-shows-42", height = "650px")
 ```
 
 ### #Goals
+
 My goals is that by the end of this webinar tutorial you will be able to quickly generate information-packed graphs like the one below with only 2 lines of code.
 
 ```{r goals, exercise = TRUE}
@@ -37,13 +45,15 @@ ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size
 ## The Basic ingRedients
 
 ### Getting Started
-For this tutorial we are going to imagine we are all new chefs in a fancy kitchen and we will be making a special dinner. To start "cooking" up code in R you'll need to know basic skills and ingredients you might find in a kitchen.
 
-Write the R code required to add **two plus two**.   
-When you want to see what the code does hit the **Run** button.  
-If you get stuck hit the **Hint** button. Sometimes there may be multiple **Hints**.  
+For this tutorial we are going to imagine we are all new chefs in a fancy kitchen and we will be making a special dinner.
+To start "cooking" up code in R you'll need to know basic skills and ingredients you might find in a kitchen.
+
+Write the R code required to add **two plus two**.\
+When you want to see what the code does hit the **Run** button.\
+If you get stuck hit the **Hint** button.
+Sometimes there may be multiple **Hints**.\
 Finally, when you're ready to submit your answer press **Submit Answer**.
-
 
 ```{r two-plus-two, exercise=TRUE}
 
@@ -67,12 +77,14 @@ grade_code()
 
 ### Subtraction
 
-See how R performs other basic arithmetic. Try subtraction now. Perform **two minus two**.
+See how R performs other basic arithmetic.
+Try subtraction now.
+Perform **two minus two**.
 
-**Remember** When you want to see what the code does hit the **Run** button.  
-If you get stuck hit the **Hint** button. Sometimes there may be multiple **Hints**.  
+**Remember** When you want to see what the code does hit the **Run** button.\
+If you get stuck hit the **Hint** button.
+Sometimes there may be multiple **Hints**.\
 Finally, when you're ready to submit your answer press **Submit Answer**.
-
 
 ```{r arithmetic, exercise=TRUE}
 
@@ -97,7 +109,8 @@ grade_code()
 
 ### Multiplication
 
-How do you think we would do multiplication? Try to **multiply 5 by 5**.
+How do you think we would do multiplication?
+Try to **multiply 5 by 5**.
 
 ```{r multiply, exercise=TRUE}
 #Write the multiplication expression below
@@ -122,7 +135,8 @@ grade_code()
 
 ### More operations
 
-Here are a couple more expressions you can use in R. Try to run the code!
+Here are a couple more expressions you can use in R.
+Try to run the code!
 
 ```{r math_more, exercise=TRUE}
  # Division expression
@@ -132,7 +146,8 @@ Here are a couple more expressions you can use in R. Try to run the code!
 
 ### More operations
 
-And this last operation handles exponentiation. Try to run the code!
+And this last operation handles exponentiation.
+Try to run the code!
 
 ```{r math_more_2, exercise=TRUE}
 # Exponentiation expression
@@ -140,16 +155,17 @@ And this last operation handles exponentiation. Try to run the code!
 
 ```
 
-
 ### Making comments
 
-See how comments affect the code. Using the "#" symbol at the beginning of a line prevents the code from being Run. In other words, R does not process this code. Click **Run** to see what happens when we put a # before the division operation below.
+See how comments affect the code.
+Using the "\#" symbol at the beginning of a line prevents the code from being Run.
+In other words, R does not process this code.
+Click **Run** to see what happens when we put a \# before the division operation below.
 
 ```{r comments, exercise=TRUE}
 #Run the division operation below with the "#" in front
 # 5 / 2 
 ```
-
 
 ### Test Your Knowledge
 
@@ -167,7 +183,10 @@ question("What will the following code return?
 
 ### Why comments
 
-So, we understand that "#" means the code won't be calculated. While the operation is not performed, we are effectively making a "comment" for ourselves. Commenting is how you take notes and give yourself a cue as to what the code's purpose is. Click **Run** to confirm that the answer we chose in the previous question was correct.
+So, we understand that "\#" means the code won't be calculated.
+While the operation is not performed, we are effectively making a "comment" for ourselves.
+Commenting is how you take notes and give yourself a cue as to what the code's purpose is.
+Click **Run** to confirm that the answer we chose in the previous question was correct.
 
 ```{r why, exercise=TRUE, exercise.eval=TRUE}
 #Run the code below. Adding a "#" at the beginning of a line prevents code from being run.
@@ -176,10 +195,10 @@ So, we understand that "#" means the code won't be calculated. While the operati
 
 ```
 
-
 ### Variables
 
-Now you will learn how to do variable assignment with the "<-" symbols. Assigning a number to a variable means this is a "numeric variable".
+Now you will learn how to do variable assignment with the "\<-" symbols.
+Assigning a number to a variable means this is a "numeric variable".
 
 ```{r variable, exercise=TRUE, exercise.lines = 7}
 # Assign the value 37 to x
@@ -197,7 +216,9 @@ grade_code()
 
 ### Adding variables
 
-Let's try adding variables together! What if I wanted to count the number of cats and dogs that I have at home? Set cats to two and dogs to three.
+Let's try adding variables together!
+What if I wanted to count the number of cats and dogs that I have at home?
+Set cats to two and dogs to three.
 
 ```{r variables_2, exercise=TRUE, exercise.lines = 12}
 # Assign the values above to the variables cats and dogs
@@ -253,7 +274,10 @@ grade_code()
 
 ### Text variables
 
-What else is a variable? Assigning a text string to a variable makes the variable a "character variable". Assign the phrase in quotation marks to the variable `text`, then underneath you need to type out `text` to display the value stored there. Once complete **Run** and then **Submit** your code.
+What else is a variable?
+Assigning a text string to a variable makes the variable a "character variable".
+Assign the phrase in quotation marks to the variable `text`, then underneath you need to type out `text` to display the value stored there.
+Once complete **Run** and then **Submit** your code.
 
 ```{r variables_3, exercise=TRUE, exercise.lines = 7}
 # Assign a "string" of words to a variable
@@ -277,7 +301,9 @@ grade_code()
 
 ### Nomencature
 
-Let's do some naming. I will start referring to the code block where you type out your code as the **script***. When you select **Run** you feed the script to the **console**.  
+Let's do some naming.
+I will start referring to the code block where you type out your code as the **script**\*.
+When you select **Run** you feed the script to the **console**.
 
 ```{r nomenclature, exercise=TRUE}
 # This code chunk here is called a "script".
@@ -307,9 +333,15 @@ question("What will the following code return?
 ## R-ecipes: Vectors and Functions:
 
 ### Vectors!
+
 Now that we know our way around the kitchen and a couple ingredients, let's learn some basic recipes and some methods of cooking in R.
 
-"Vectors" are a type of variable that holds a series of values. Like a shopping list or a receipt. You will be using a new "function" that looks like this `c()`. Values are separated by commas in the `c()` function. Assign any series of value to the variable - you can pick any numbers you want. Make sure to put a comma between the numbers though!
+"Vectors" are a type of variable that holds a series of values.
+Like a shopping list or a receipt.
+You will be using a new "function" that looks like this `c()`.
+Values are separated by commas in the `c()` function.
+Assign any series of value to the variable - you can pick any numbers you want.
+Make sure to put a comma between the numbers though!
 
 ```{r vectors, exercise=TRUE, exercise.lines = 7}
 #Assign a series of values to the my_receipt variable. 
@@ -337,7 +369,10 @@ my_receipt
 
 ### More Vectors
 
-Vectors can also be a series of texts values not just numbers. Remember you need to use " " with text. Below, a series of fruits are assigned to the `my_list` variable. All of you to do is type out the name of the variable where applicable. 
+Vectors can also be a series of texts values not just numbers.
+Remember you need to use " " with text.
+Below, a series of fruits are assigned to the `my_list` variable.
+All of you to do is type out the name of the variable where applicable.
 
 ```{r vectors_2, exercise=TRUE, exercise.lines = 7}
 #Assign a series of texts to the my_list variable, which will also be a vector
@@ -349,7 +384,8 @@ my_list <- c("apples", "bananas","eggplant","tofu", "pasta")
 
 ### Vector Selection
 
-You can use [] to select which element or value you want from each vector. **Run** the code below to see how this works.
+You can use [] to select which element or value you want from each vector.
+**Run** the code below to see how this works.
 
 ```{r vectors_3, exercise=TRUE, exercise.lines = 7}
 #Assign a series of texts to the my_list variable, which will also be a vector
@@ -376,7 +412,12 @@ my_receipt[1]`",
 ```
 
 ### Vector functions
-You can use apply functions to your vectors and variables. There is another function `mean()` that calculates the average value of a vector. All you have to do is "wrap" your variable name in the `mean()` function as you see below. Press **Run** to complete the calculation.
+
+You can use apply functions to your vectors and variables.
+There is another function `mean()` that calculates the average value of a vector.
+All you have to do is "wrap" your variable name in the `mean()` function as you see below.
+Press **Run** to complete the calculation.
+
 ```{r mean, exercise=TRUE, exercise.lines = 7}
 #Let's make a vector of a grocery shopping list
 my_vector <- c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20)
@@ -387,7 +428,10 @@ mean(my_vector)
 ```
 
 ### More Functions
-There are countless functions to call, so try some! Just type out the name of a function seen below and put the variable name inside the parentheses.
+
+There are countless functions to call, so try some!
+Just type out the name of a function seen below and put the variable name inside the parentheses.
+
 ```{r mean_2, exercise=TRUE}
 #Let's use another shopping list vector again
 my_vector <- c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20)
@@ -405,7 +449,11 @@ median(my_vector)
 ```
 
 ### Saving the Result
-We can also save the result of the function to another variable. Try saving the result of the `mean()` function for `my_vector` to yet another variable named `new_val`. Once complete, **Run** and then **Submit** your code.
+
+We can also save the result of the function to another variable.
+Try saving the result of the `mean()` function for `my_vector` to yet another variable named `new_val`.
+Once complete, **Run** and then **Submit** your code.
+
 ```{r mean_3, exercise=TRUE}
 #Let's use another shopping list vector again
 my_vector <- c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20)
@@ -429,9 +477,17 @@ grade_code()
 ## Making Dinner: Data Tables
 
 ### Dataframes
-You are doing so well! You've learned all the basics of how to cook. But now we need to actually gather the ingredients and build the recipe for the main course. The main recipe is our data table.
 
-A **dataframe** is what we call our data tables in R, like an excel table. Below type out the variable name `starwars` to display the A Star Wars related dataset. `starwars` is preloaded into our session and accessible for our use. Don't forget to hit **Run**
+You are doing so well!
+You've learned all the basics of how to cook.
+But now we need to actually gather the ingredients and build the recipe for the main course.
+The main recipe is our data table.
+
+A **dataframe** is what we call our data tables in R, like an excel table.
+Below type out the variable name `starwars` to display the A Star Wars related dataset.
+`starwars` is preloaded into our session and accessible for our use.
+Don't forget to hit **Run**
+
 ```{r df, exercise=TRUE}
 #Type out starwars to display the R dataframe known as starwars
 starwars
@@ -439,7 +495,12 @@ starwars
 
 ### Understanding your Data
 
-It's useful to investigate our dataframe to understand it better. There are a number of functions to help us out. Let's start with the head() function. Once complete, **Run** and then **Submit** your code. What do you think this function does?
+It's useful to investigate our dataframe to understand it better.
+There are a number of functions to help us out.
+Let's start with the head() function.
+Once complete, **Run** and then **Submit** your code.
+What do you think this function does?
+
 ```{r df_head, exercise=TRUE}
 #Apply the head() function to the dataframe like you would any other function and variable.
 head()
@@ -455,9 +516,14 @@ grade_code()
 ```
 
 ### More Understanding
-We can also use another important function, glimpse(), to give us a general idea of what is stored in our dataframe. Wrap the `starwars` variable in the `glimpse()` function. Try it out below! 
 
-Note: Each column of a dataframe is interestingly sometimes referred to as a "variable" in R. Can you see how that might make sense?
+We can also use another important function, glimpse(), to give us a general idea of what is stored in our dataframe.
+Wrap the `starwars` variable in the `glimpse()` function.
+Try it out below!
+
+Note: Each column of a dataframe is interestingly sometimes referred to as a "variable" in R.
+Can you see how that might make sense?
+
 ```{r df_glimpse, exercise=TRUE}
 #Apply the glimpse() function to the dataframe like you would any other variable.
 glimpse()
@@ -465,7 +531,11 @@ glimpse()
 ```
 
 ### Summary Function
-Now let's try the `summary()` function too. Wrap `starwars` in the `summary()` function. Once complete, **Run** and then **Submit** your code.
+
+Now let's try the `summary()` function too.
+Wrap `starwars` in the `summary()` function.
+Once complete, **Run** and then **Submit** your code.
+
 ```{r df_summary, exercise=TRUE}
 #Apply the summary() function to the dataframe.
 
@@ -481,6 +551,7 @@ grade_code()
 ```
 
 ### Test Your Knowledge
+
 ```{r star_dataframe}
 glimpse(starwars)
 ```
@@ -498,18 +569,21 @@ question("Name a variable found in the starwars dataframe",
 
 ## RefreshR
 
-We covered a lot so far so let's take a step back to catch our breath and refresh our knowledge. 
+We covered a lot so far so let's take a step back to catch our breath and refresh our knowledge.
 
 ### Scattergories
-*NOTE: If you're taking this tutorial on your own you're welcome to press ***Continue*** *below to skip this warm-up.*
 
-Before we review, let's play a game to warm up for the day! A game that me and my friends like to play is called Scattergories. It's simple and fun. 
+*NOTE: If you're taking this tutorial on your own you're welcome to press* **Continue**\* *below to skip this warm-up.*
 
-1. Everyone get out a pencil and paper or just take notes on a word document.
-2. Make a list from 1 to 6 on the paper
-3. You will be given 6 categories after I press the start button 
-4. You have 1 minute think of a word or phrase for each category that STARTS with the big letter shown BUT the catch is that you only get points if no one else thought of that word!
-5. At the end we will score our cards. Whoever has the most points at the end wins!
+Before we review, let's play a game to warm up for the day!
+A game that me and my friends like to play is called Scattergories.
+It's simple and fun.
+
+1.  Everyone get out a pencil and paper or just take notes on a word document.
+2.  Make a list from 1 to 6 on the paper
+3.  You will be given 6 categories after I press the start button
+4.  You have 1 minute think of a word or phrase for each category that STARTS with the big letter shown BUT the catch is that you only get points if no one else thought of that word!
+5.  At the end we will score our cards. Whoever has the most points at the end wins!
 
 [Click here to play](https://swellgarfo.com/scattergories/)
 
@@ -518,6 +592,7 @@ Before we review, let's play a game to warm up for the day! A game that me and m
 Let's review what we've learned so far.
 
 ### Question 1
+
 ```{r refresher_1, echo = FALSE}
 question("What code is needed to multiple 123 x 2?",
          answer("`246`", message = "You're great at math! But this is not the answer"),
@@ -530,6 +605,7 @@ question("What code is needed to multiple 123 x 2?",
 ```
 
 ### Question 2
+
 ```{r refresher_2, echo = FALSE}
 question("What code would make a new variable that adds together the variables 'fruits' and 'veggies' as seen below?     
 ` fruits <- 4
@@ -544,6 +620,7 @@ question("What code would make a new variable that adds together the variables '
 ```
 
 ### Question 3
+
 ```{r refresher_3, echo = FALSE}
 question("What function allows us create a vector from a series of values?",     
          answer("`mean()`", message = "This function gives you the average."),
@@ -556,6 +633,7 @@ question("What function allows us create a vector from a series of values?",
 ```
 
 ### Question 4
+
 ```{r refresher_4, echo = FALSE}
 question("What code do you need to find the average of my_vector?     
 `my_vector <- c(14, 5, 2, 12, 24, 100, 3, 400, 14, 14, 2, 20)`",
@@ -569,6 +647,7 @@ question("What code do you need to find the average of my_vector?
 ```
 
 ### Question 5
+
 ```{r gapminder_refresher}
 glimpse(gapminder)
 ```
@@ -587,9 +666,14 @@ question("Name a variable found in the gapminder dataframe",
 ## Prep the Recipe: Manipulating Data
 
 ### Starwars Dataframe
-We've gathered the ingredients, made sure the food looked good, and examined how it all fits together. Now we can actually start dicing, spicing, and sauteing. 
 
-In other words let's try "manipulating" the data. Back to starwars! Type the name of the dataframe `starwars` below and hit **Run** to display it.
+We've gathered the ingredients, made sure the food looked good, and examined how it all fits together.
+Now we can actually start dicing, spicing, and sauteing.
+
+In other words let's try "manipulating" the data.
+Back to starwars!
+Type the name of the dataframe `starwars` below and hit **Run** to display it.
+
 ```{r starwars, exercise=TRUE}
 #Access the built-in starwars dataset by typing starwars
 
@@ -602,9 +686,12 @@ starwars
 
 ### Leveling Up
 
-We are going to need new functions to help us manipulate our data. To do this you will need to download a package, in order to Upgrade R. Hit **Run** to process this code to install and deploy the **tidyverse**. 
+We are going to need new functions to help us manipulate our data.
+To do this you will need to download a package, in order to Upgrade R. Hit **Run** to process this code to install and deploy the **tidyverse**.
 
-Note: When you hit Run you'll see the following message `Warning: package 'tidyverse' is in use and will not be installed`. This is fine - **tidyverse** is already loaded in our session. I just want you to see how you install and load new packages if you need to do it on your own.
+Note: When you hit Run you'll see the following message `Warning: package 'tidyverse' is in use and will not be installed`.
+This is fine - **tidyverse** is already loaded in our session.
+I just want you to see how you install and load new packages if you need to do it on your own.
 
 ```{r starwars_package, exercise=TRUE}
 #The code below will download the "tidyverse" package from the internet
@@ -617,13 +704,15 @@ library(tidyverse)
 
 ### New Functions
 
-Now that R is leveled up we can use new functions like `select()`, `filter()`, `arrange()`, and `mutate()`. Let's try out `select()`.
+Now that R is leveled up we can use new functions like `select()`, `filter()`, `arrange()`, and `mutate()`.
+Let's try out `select()`.
 
 ### Selecting
 
 `select()` takes the following format `select(dataframe,column name, column name, column name, etc)`.
 
 ### What do you think?
+
 ```{r star_dataframe_2}
 glimpse(starwars)
 ```
@@ -641,7 +730,11 @@ question("What is the code to select the variables name and height from starwars
 
 ### Select Starwars
 
-Great! Now we can select columns from the starwars dataset. Let's **select** a couple columns to make it interesting. Hit **Run** to apply the `select()` function as seen below.
+Great!
+Now we can select columns from the starwars dataset.
+Let's **select** a couple columns to make it interesting.
+Hit **Run** to apply the `select()` function as seen below.
+
 ```{r starwars_select, exercise=TRUE}
 # Select name, height, homeworld, and species
 select(starwars,name, height,homeworld,species)
@@ -650,7 +743,11 @@ select(starwars,name, height,homeworld,species)
 
 ### Nested Selecting
 
-Can we  put a function within a function? Why yes! In the code below wrap the `select()` function with the `head()` function. In functional terms, use `head()` to find the first 6 rows of the selected starwars columns. Once complete, **Run** and then **Submit** your code.  
+Can we put a function within a function?
+Why yes!
+In the code below wrap the `select()` function with the `head()` function.
+In functional terms, use `head()` to find the first 6 rows of the selected starwars columns.
+Once complete, **Run** and then **Submit** your code.
 
 If you get stuck hit the **Solution** button.
 
@@ -666,15 +763,18 @@ head(select(starwars,name, height,homeworld,species))
 
 ```{r starwars_select_2-code-check}
 grade_code()
-``` 
+```
 
 ### Filtering
 
-Sometimes we only want very specific data so we will need to **filter** it, just like in an excel filter. 
-`filter()` takes the folllowing format. 
-`filter(dataset, column_name [filtering_condition])`  
+Sometimes we only want very specific data so we will need to **filter** it, just like in an excel filter.
+`filter()` takes the folllowing format.
+`filter(dataset, column_name [filtering_condition])`
 
-Take note of the code below. See how we created a new variable `starwars_head` and fed that into the filter. In sum, this code script will filter the first 6 rows of the `starwars` so that only characters whose homeworld is Tatooine will be shown. *Notice how we have to use `==` instead of `=` when doing a filtering condition inside of `filter()`*.  
+Take note of the code below.
+See how we created a new variable `starwars_head` and fed that into the filter.
+In sum, this code script will filter the first 6 rows of the `starwars` so that only characters whose homeworld is Tatooine will be shown.
+*Notice how we have to use `==` instead of `=` when doing a filtering condition inside of `filter()`*.
 
 Press **Run** to see the result of the `filter()` function on `starwars_head`.
 
@@ -691,6 +791,7 @@ filter(starwars_head, homeworld == "Tatooine")
 ```
 
 ### Test your Understanding
+
 ```{r star_filter_setup}
 starwars_head <- head(select(starwars,name, height,homeworld,species))
 starwars_head
@@ -708,7 +809,10 @@ question("How can we filter the starwars_head data to only show data for Droids?
 ```
 
 ### Answer
-Let's try out that solution now and compare it to starwars_head. Below you first save `starwars_head`, second you will name `starwars_head` so that it displays to the console, and then lastly you will apply the `filter()` as seen in the answer above to get the filtered dataset.
+
+Let's try out that solution now and compare it to starwars_head.
+Below you first save `starwars_head`, second you will name `starwars_head` so that it displays to the console, and then lastly you will apply the `filter()` as seen in the answer above to get the filtered dataset.
+
 ```{r starwars_answer, exercise=TRUE}
 #Save starwars_head again below so you can compare it to the filtered dataset next
 starwars_head <- head(select(starwars,name, height,homeworld,species))
@@ -722,11 +826,16 @@ filter(starwars_head,species == "Droid")
 ```
 
 ### More Filtering
-Filtering is very flexible. Let's see how we can filter height for characters below 100. I'm showing you `starwars_head` automatically so it is easier to figure out the correct code.  
 
-In the script below you need to figure out how to `filter()` `starwars_head` so the dataframe is limited to characters whose height is less than 100. Don't forget you can use **Hints** if you get stuck.  
+Filtering is very flexible.
+Let's see how we can filter height for characters below 100.
+I'm showing you `starwars_head` automatically so it is easier to figure out the correct code.
+
+In the script below you need to figure out how to `filter()` `starwars_head` so the dataframe is limited to characters whose height is less than 100.
+Don't forget you can use **Hints** if you get stuck.
 
 Once complete **Run** and then **Submit** your code.
+
 ```{r filter_logic_head}
 #Display starwars head as we have done before
 starwars_head <- head(select(starwars,name, height,homeworld,species))
@@ -776,7 +885,6 @@ starwars_head <- head(select(starwars,name, height,homeworld,species))
 starwars_head
 ```
 
-
 ```{r ques_doublefilter, echo = FALSE}
 question("How can we filter starwars_head to only show data for Humans that are above 200 height.",
          answer('`filter(starwars_head,species == "Human", height > 200)`', correct = TRUE),
@@ -789,27 +897,36 @@ question("How can we filter starwars_head to only show data for Humans that are 
 ```
 
 ### Answer
+
 Let's try out that solution.
+
 ```{r starwars_df_answer, exercise=TRUE, exercise.setup = "starwars_head"}
 #Apply the two filters to starwars_head
 filter(starwars_head,species == "Human", height > 200)
 ```
 
 ### Arrange
-We can also use the function arrange to sort data within a column. 
-Arrange take the following format.  
-`arrange(dataset, column name)`  
 
-I've pre-stored `starwars_head` below so you can just type `starwars_head` access this dataframe. Hit **Run** to see how arrange works.
+We can also use the function arrange to sort data within a column.
+Arrange take the following format.\
+`arrange(dataset, column name)`
+
+I've pre-stored `starwars_head` below so you can just type `starwars_head` access this dataframe.
+Hit **Run** to see how arrange works.
 
 ```{r starwars_arrange, exercise=TRUE, exercise.setup = "starwars_head"}
 #Apply the function arrange to the height column
 arrange(starwars_head)
 ```
-### Descending
-The desc() function reverses the order of arrange. Try wrapping `height` in the `desc()` function so `arrange()` gets the cue to reverse the order.
 
-Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code.
+### Descending
+
+The desc() function reverses the order of arrange.
+Try wrapping `height` in the `desc()` function so `arrange()` gets the cue to reverse the order.
+
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+
 ```{r starwars_desc, exercise=TRUE, exercise.setup = "starwars_head"}
 #Apply the desc() function to our arrange code.
 arrange()
@@ -833,12 +950,18 @@ arrange(starwars_head,desc(height))
 ```{r starwars_desc-code-check}
 grade_code()
 ```
+
 ### Mutate
-Yet another critical function is mutate(). This function allows you to modify existing columns, calculate new columns, and more. 
+
+Yet another critical function is mutate().
+This function allows you to modify existing columns, calculate new columns, and more.
 
 Mutate takes the following format: `mutate(dataset,new or existing column name = some calculation)`
 
-I have a suspicion that the height provided is given in cm. So I am going to add a new column to this dataframe -- height in inches! Examine the script below, then hit **Run** to see how the new dataframe compares against the original `starwars_head` dataframe.
+I have a suspicion that the height provided is given in cm.
+So I am going to add a new column to this dataframe -- height in inches!
+Examine the script below, then hit **Run** to see how the new dataframe compares against the original `starwars_head` dataframe.
+
 ```{r starwars_unmutate}
 #Run starwars_head to compare against new mutated dataframe
 starwars_head
@@ -849,12 +972,18 @@ starwars_head
 mutate(starwars_head,height_inch = height / 2.54)
 
 ```
+
 ### More Mutations
-We can also use mutate to modify existing columns rather than make new columns. How could we use mutate to change starwars_head so that height is simply expressed in inches in the "height" column without making a new column?
 
-Remember, Mutate takes the following format: `mutate(dataset,new or existing column name = some calculation)` and that there are 2.54 cms in an inch. So, set `height` equal to the `some calculation` portion of your code.  
+We can also use mutate to modify existing columns rather than make new columns.
+How could we use mutate to change starwars_head so that height is simply expressed in inches in the "height" column without making a new column?
 
-Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code.
+Remember, Mutate takes the following format: `mutate(dataset,new or existing column name = some calculation)` and that there are 2.54 cms in an inch.
+So, set `height` equal to the `some calculation` portion of your code.
+
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+
 ```{r starwars_unmutate_2}
 #Run starwars_head to compare against new mutated dataframe
 starwars_head
@@ -885,10 +1014,14 @@ grade_code()
 ```
 
 ### Aggregating Data
-Briefly, we will explore how to summarize and aggregate our data to make it easier to intepret(and graph!). Now let's try to see how many of each species type there are by using the count() function.
+
+Briefly, we will explore how to summarize and aggregate our data to make it easier to intepret(and graph!).
+Now let's try to see how many of each species type there are by using the count() function.
 Count takes the following format: `count(dataset,column name)`
 
-Below, apply the `count()` function to the original `starwars` dataframe to count how many species types there are. Hit the **Run** button to process the script. How many species types do you count?
+Below, apply the `count()` function to the original `starwars` dataframe to count how many species types there are.
+Hit the **Run** button to process the script.
+How many species types do you count?
 
 ```{r starwars_count, exercise=TRUE}
 #Apply the count function to the original starwars dataframe
@@ -896,10 +1029,17 @@ count(starwars,species)
 ```
 
 ### More Counting
-Count takes a special "argument" called "sort". An **argument** is code that modifies a function. So just place a comma after species and write sort=TRUE like so:  
-`count(dataset,column name, sort = TRUE)`  
 
-In our case, `sort` is an **argument** of the `count()` function. Below you will need to run `count()` again on species and then set the `sort` argument to TRUE. Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code. 
+Count takes a special "argument" called "sort".
+An **argument** is code that modifies a function.
+So just place a comma after species and write sort=TRUE like so:\
+`count(dataset,column name, sort = TRUE)`
+
+In our case, `sort` is an **argument** of the `count()` function.
+Below you will need to run `count()` again on species and then set the `sort` argument to TRUE.
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+
 ```{r starwars_count_sort, exercise=TRUE}
 #Apply the count function again but with Sort = TRUE 
 
@@ -925,9 +1065,13 @@ grade_code()
 ```
 
 ### Now you try
-What code do we need to count how many starwars characters are from each homeworld and have the order sorted from most to least frequent?   
 
-Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code. You'll need the correct answer to solve the question after this exercise.
+What code do we need to count how many starwars characters are from each homeworld and have the order sorted from most to least frequent?
+
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+You'll need the correct answer to solve the question after this exercise.
+
 ```{r starwars_count_planet, exercise=TRUE}
 #Count the number of homeworlds in starwars and sort it
 ```
@@ -965,11 +1109,16 @@ question("Which homeworld are the most starwars characters from in the `starwars
 ```
 
 ### Summarizing data
-Another crucial aggegating function is summarize. In this exercise, we will attempt to find the minimum height of the starwars dataframe. 
+
+Another crucial aggegating function is summarize.
+In this exercise, we will attempt to find the minimum height of the starwars dataframe.
 
 summarize() takes the following format: `summarize(dataframe, function(existing column)`.
 
-Use `summarize()` to find the **minimum height** of the starwars dataframe. Once complete **Run** and then **Submit** your code. The result **may surprise you**.
+Use `summarize()` to find the **minimum height** of the starwars dataframe.
+Once complete **Run** and then **Submit** your code.
+The result **may surprise you**.
+
 ```{r starwars_summarize, exercise=TRUE}
 #Use the summarize() and min() function to gives us the minimum height of the starwars characters
 
@@ -995,9 +1144,16 @@ grade_code()
 ```
 
 ### NA issue
-Yep that's right, you were suppose to get "NA" as an answer. I suspect that we cannot find the minimum height of the height variable because one or multiple characters have an undefined height. In other words some characters have their height listed as "NA".
 
-Let's double check that. We can either go through the entire starwars dataframe to look for NA as height or we can do a shortcut. **Run** the following script to see all entries for height. Observe how `$` is used access the height variable from starwars. Do you see any NAs?
+Yep that's right, you were suppose to get "NA" as an answer.
+I suspect that we cannot find the minimum height of the height variable because one or multiple characters have an undefined height.
+In other words some characters have their height listed as "NA".
+
+Let's double check that.
+We can either go through the entire starwars dataframe to look for NA as height or we can do a shortcut.
+**Run** the following script to see all entries for height.
+Observe how `$` is used access the height variable from starwars.
+Do you see any NAs?
 
 ```{r starwars_height_examine, exercise=TRUE}
 #See all entries for height
@@ -1005,12 +1161,16 @@ starwars$height
 ```
 
 ### Dropping NA's
-Yes there were 6 NAs, which is why the minimum could not be calculated. Let's see if we tell minimum to disregard NAs.  
 
-The min() function has a special argument called `na.rm` which means **r**e**m**ove **NA**s. So this time let's try the `summarize()` function again to find the minimum height, but this time set `na.rm` to TRUE inside of min() like so:  
-`min(height,na.rm=TRUE)` 
+Yes there were 6 NAs, which is why the minimum could not be calculated.
+Let's see if we tell minimum to disregard NAs.
+
+The min() function has a special argument called `na.rm` which means **r**e**m**ove **NA**s.
+So this time let's try the `summarize()` function again to find the minimum height, but this time set `na.rm` to TRUE inside of min() like so:\
+`min(height,na.rm=TRUE)`
 
 And remember `summarize()` takes the following format: `summarize(dataframe, function(existing column)`.
+
 ```{r starwars_dropna, exercise=TRUE}
 #Now try the summarize() function again but this time remove the NAs from height.
 
@@ -1036,12 +1196,15 @@ grade_code()
 ```
 
 ### More Summarizing
-Now that we know how to eliminate NA's let's find the **maximum height** of the starwars characters. **Run** the code below and then solve the question related to it. Use the `max()` function inside `summarize()` to find the *maximum height**
+
+Now that we know how to eliminate NA's let's find the **maximum height** of the starwars characters.
+**Run** the code below and then solve the question related to it.
+Use the `max()` function inside `summarize()` to find the \*maximum height\*\*
+
 ```{r starwars_summarizing, exercise=TRUE}
 #Use max() to find the max height of starwars
 
 ```
-
 
 ```{r ques_max_height, echo = FALSE}
 question("What is the maximum height for the starwars characters",
@@ -1055,22 +1218,26 @@ question("What is the maximum height for the starwars characters",
 ```
 
 ### Starwars Trivia
-And now just for fun, answer the following off the top of your head:  
-The smallest starwars character is(66cm)?  
+
+And now just for fun, answer the following off the top of your head:\
+The smallest starwars character is(66cm)?\
 The tallest starwars character is(264cm)?
 
 ### Trivia Answers
-Smallest - Yoda (66 cm) \
+
+Smallest - Yoda (66 cm)\
 Tallest - Yarael Poof (264 cm)
 
-![Yoda](images/yoda.png){#id .class width=50% height=50%}
-![Yarael Poof](images/poof.png){#id .class width=50% height=50%}
+![Yoda](images/yoda.png){#id .class width="50%" height="50%"} ![Yarael Poof](images/poof.png){.class width="50%" height="50%"}
 
 ### Renaming Columns
-You can use the `rename()` function to rename columns in your dataframe. Rename takes the following format:  
-`rename(dataframe,column new name = column old name)` \
+
+You can use the `rename()` function to rename columns in your dataframe.
+Rename takes the following format:\
+`rename(dataframe,column new name = column old name)`\
 
 Rename the height column to read "height_cm" rather than just "height".
+
 ```{r starwars_rename, exercise=TRUE}
 #Apply the rename() function to starwars and change height to height_cm
 
@@ -1097,20 +1264,27 @@ grade_code()
 
 ### Checkpoint: Special Code
 
-**Congratulations!** You're all caught up with the rest of the class now.   
+**Congratulations!** You're all caught up with the rest of the class now.
 
-You have unlocked the special code: **Katherine Johnson**   
+You have unlocked the special code: **Katherine Johnson**
 
-You can **stop** the tutorial and take the remainder of the course in-person. Please send an email with the subject line **Katherine Johnson** to me, Zach Margulies, by clicking [here](mailto:zachary.margulies@baltimorecity.gov?subject=Katherine%20Johnson). This will confirm to me that you are all caught up. You're welcome to continue if you wish, but we will cover the rest in person. 
+You can **stop** the tutorial and take the remainder of the course in-person.
+Please send an email with the subject line **Katherine Johnson** to me, Zach Margulies, by clicking [here](mailto:zachary.margulies@baltimorecity.gov?subject=Katherine%20Johnson).
+This will confirm to me that you are all caught up.
+You're welcome to continue if you wish, but we will cover the rest in person.
 
 ## It's all about pResentation: Graphing
 
 ### Just the basics
-You finished cooking and it smells amazing. The work is not done though, you still have to plate the food and make sure it looks presentable. 
 
-R can quickly and easily produce publication quality graphs. There are a lot of ways to tweak graphs but let's just keep it simple for now.
+You finished cooking and it smells amazing.
+The work is not done though, you still have to plate the food and make sure it looks presentable.
 
-In the script below we will apply the `head()` function to a dataset known as `gapminder` that I have preloaded for us. Click **Run** to process the script and inspect `gapminder`
+R can quickly and easily produce publication quality graphs.
+There are a lot of ways to tweak graphs but let's just keep it simple for now.
+
+In the script below we will apply the `head()` function to a dataset known as `gapminder` that I have preloaded for us.
+Click **Run** to process the script and inspect `gapminder`
 
 ```{r gapminder_1, exercise=TRUE}
 #I've installed and loaded the gapminder dataset for us. Let's check it out with head()
@@ -1118,16 +1292,23 @@ head(gapminder)
 ```
 
 ### Investigate
-Of note "gdpPercap" means Gross Domestic Product Per Capita. 
 
-So, GDP per Capita is a metric for a **country's economic output per person("capita")** over one year. **GDP per Capita** is calculated by **dividing** the **GDP** of a country by its **population**. Some use this metric as an indicator of the economic health or status of a county. What other functions besides head() might be useful to explore this dataset? 
+Of note "gdpPercap" means Gross Domestic Product Per Capita.
 
-Let's investigate the dataset(hereafter referred to as a dataframe) further. Try applying the `summary()` function to the gapminder dataframe to better understand the data. Once complete **Run** and then **Submit** your code.
+So, GDP per Capita is a metric for a **country's economic output per person("capita")** over one year.
+**GDP per Capita** is calculated by **dividing** the **GDP** of a country by its **population**.
+Some use this metric as an indicator of the economic health or status of a county.
+What other functions besides head() might be useful to explore this dataset?
+
+Let's investigate the dataset(hereafter referred to as a dataframe) further.
+Try applying the `summary()` function to the gapminder dataframe to better understand the data.
+Once complete **Run** and then **Submit** your code.
 
 ```{r gapminder_2, exercise=TRUE}
 #Use the summary() function on the gapminder dataframe
 
 ```
+
 ```{r gapminder_2-hint-1}
 #Use the summary() function on the gapminder dataframe
 summary
@@ -1148,10 +1329,15 @@ grade_code()
 ```
 
 ### Relationships
-Over the next few sections we will be investigating whether or not there is a  relationship(or correlation) between **life expectancy(lifeExp)** and **GDP per Capita(gdpPercap)**. To make things simpler, let's say I only want to investigate this for the year **2007**. Let's begin.
+
+Over the next few sections we will be investigating whether or not there is a relationship(or correlation) between **life expectancy(lifeExp)** and **GDP per Capita(gdpPercap)**.
+To make things simpler, let's say I only want to investigate this for the year **2007**.
+Let's begin.
 
 ### Test out Understanding
-Let's start by looking at data for the year 2007. Below I've loaded a `glimpse` of `gapminder` to help you with the question.
+
+Let's start by looking at data for the year 2007.
+Below I've loaded a `glimpse` of `gapminder` to help you with the question.
 
 ```{r ques_2007_help}
 #A glimpse at gapminder to help with the question below
@@ -1170,17 +1356,25 @@ question("How can we chop up the gapminder dataset to show data for the year 200
 ```
 
 ### Filtering
-Great! Let's see what the correct answer looks like below. Click **Run**. 
+
+Great!
+Let's see what the correct answer looks like below.
+Click **Run**.
+
 ```{r gapminder_3b, exercise=TRUE}
 filter(gapminder,year==2007)
 ```
 
 ### Summary
-To help us explore the characteristics of the filtered dataframe let's try `summary()` again. 
 
-We'll start by saving the filtered function above to a new variable, which we will name `gapminder_2007`. Go ahead and type this below.
+To help us explore the characteristics of the filtered dataframe let's try `summary()` again.
 
-Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code. 
+We'll start by saving the filtered function above to a new variable, which we will name `gapminder_2007`.
+Go ahead and type this below.
+
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+
 ```{r gapminder_2007, exercise=TRUE}
 # Filter gapminder for the year 2007 and save it to a new variable, gapminder_2007
 
@@ -1206,7 +1400,11 @@ grade_code()
 ```
 
 ### Summary
-Now that we have the filtered dataframe saved to a variable, just use the `summary()` function on this new variable. Click **Run** on the code below to see the results of this. Inspect the results.
+
+Now that we have the filtered dataframe saved to a variable, just use the `summary()` function on this new variable.
+Click **Run** on the code below to see the results of this.
+Inspect the results.
+
 ```{r gapminder_summary,exercise = TRUE}
 #Save code above to a new variable, gapminder 2007
 gapminder_2007 <- filter(gapminder,year==2007)
@@ -1216,9 +1414,15 @@ summary(gapminder_2007)
 ```
 
 ### Graphing! Finally!
-Now we can finally begin to make graphs!! The way we do that is by using a highly customizable set of functions in the **ggplot2 package**.Thankfully ggplot2 is a part of the **tidyverse package**, which we already installed. Below I will show you basic code to setup a standard scatterplot with ggplot2. 
 
-Click **Run** on the code below to see what the code does. Inspect the results. What do you notice and what do you think of this graph? What is good and what is bad?
+Now we can finally begin to make graphs!!
+The way we do that is by using a highly customizable set of functions in the **ggplot2 package**.Thankfully ggplot2 is a part of the **tidyverse package**, which we already installed.
+Below I will show you basic code to setup a standard scatterplot with ggplot2.
+
+Click **Run** on the code below to see what the code does.
+Inspect the results.
+What do you notice and what do you think of this graph?
+What is good and what is bad?
 
 ```{r gapminder,echo=FALSE}
 #Save code above to a new variable, gapminder 2007
@@ -1232,53 +1436,82 @@ ggplot(gapminder_2007,mapping = aes(x=lifeExp,y=gdpPercap)) +
 ```
 
 ### Break it down
-We made a scatterplot! I know it's a weird format but you'll catch on. Let's break it down piece by piece. 
 
-First we need to run the `ggplot()` function on our filtered dataframe, `gapminder_2007`. Click **Run** on the code below to see what the code does. 
+We made a scatterplot!
+I know it's a weird format but you'll catch on.
+Let's break it down piece by piece.
+
+First we need to run the `ggplot()` function on our filtered dataframe, `gapminder_2007`.
+Click **Run** on the code below to see what the code does.
+
 ```{r gapminder_6, exercise=TRUE, exercise.setup = "gapminder"}
 #Try Running the code without the additional parameters.
 ggplot(gapminder_2007)
 ```
 
 ### Aesthetics
-Running ggplot on the dataframe alone just produced an empty plot. Next we need to add a new argument to ggplot() which is `mapping = aes()`. Click **Run** on the code below.
+
+Running ggplot on the dataframe alone just produced an empty plot.
+Next we need to add a new argument to ggplot() which is `mapping = aes()`.
+Click **Run** on the code below.
 
 Once again we have an empty plot.
+
 ```{r gapminder_7, exercise=TRUE, exercise.setup = "gapminder"}
 #Try Running the code with the mapping = aes() argument
 ggplot(gapminder_2007,mapping = aes())
 ```
 
 ### Don't forget your x and y's!
-Whoops we forgot to add x and y values! The `aes()` function inside the `mapping` argument allows you to customize your ggplot. Here we can set what our x and y values ought to be. 
 
-Before I said that I wanted to explore the potential relationship between Life Expectancy and GDP per capita. So let's set `x = lifeExp` and `y = gdpPercap` inside the `map = aes() argument`. Click **Run** on the code below. 
+Whoops we forgot to add x and y values!
+The `aes()` function inside the `mapping` argument allows you to customize your ggplot.
+Here we can set what our x and y values ought to be.
+
+Before I said that I wanted to explore the potential relationship between Life Expectancy and GDP per capita.
+So let's set `x = lifeExp` and `y = gdpPercap` inside the `map = aes() argument`.
+Click **Run** on the code below.
 
 Now we have an empty plot with axis, but still no data points.
+
 ```{r gapminder_8, exercise=TRUE, exercise.setup = "gapminder"}
 #Now try the code with the x and y values set.
 ggplot(gapminder_2007,mapping = aes(x=lifeExp,y=gdpPercap))
 ```
 
 ### What's the point?
-Something's not right here! We have the graph but still no points. Well we have to **add** the **geom_point()** function which tells ggplot to make a scatter plot. In other words, we need to place the food on plates!
 
-In the code below you need to place a `+` after the `ggplot()` function and then type `geom_point()`. Click **Run** on the code below. 
+Something's not right here!
+We have the graph but still no points.
+Well we have to **add** the **geom_point()** function which tells ggplot to make a scatter plot.
+In other words, we need to place the food on plates!
+
+In the code below you need to place a `+` after the `ggplot()` function and then type `geom_point()`.
+Click **Run** on the code below.
 
 Et Voilà now you have a scatterplot!
+
 ```{r gapminder_9, exercise=TRUE, exercise.setup = "gapminder"}
 #Add the geom_point function to the ggplot() function
 ggplot(gapminder_2007,mapping = aes(x=lifeExp,y=gdpPercap)) + 
   geom_point()
 ```
 
-### Dependency 
-Sometimes sticks out to me about this relationship. I feel like the x and y values could be different in some way. What do you think?
+### Dependency
 
-### Dependency 
-The way I see it Life Expectancy is a dependent variable which depends on GDP per capita(the independent variable). So, `x=gdpPercap` and `y=lifeExp` makes more sense to me. In other words, I believe that a country's life expectancy is a function of the economic health of said country. In the code below, switch the x and y values so that `x=gdpPercap` and `y = lifeExp`.
+Sometimes sticks out to me about this relationship.
+I feel like the x and y values could be different in some way.
+What do you think?
 
-Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code.
+### Dependency
+
+The way I see it Life Expectancy is a dependent variable which depends on GDP per capita(the independent variable).
+So, `x=gdpPercap` and `y=lifeExp` makes more sense to me.
+In other words, I believe that a country's life expectancy is a function of the economic health of said country.
+In the code below, switch the x and y values so that `x=gdpPercap` and `y = lifeExp`.
+
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
 
 ```{r gapminder_10, exercise=TRUE, exercise.setup = "gapminder"}
 #Now try changing the x and y values.
@@ -1300,7 +1533,12 @@ grade_code()
 ```
 
 ### Trends
-Let's keep customizing! We will apply a trendline to the graph which helps to visualize trends in the data. Below, I am adding the function `geom_smooth()` to add a trendline. Click **Run** and inspect the results. 
+
+Let's keep customizing!
+We will apply a trendline to the graph which helps to visualize trends in the data.
+Below, I am adding the function `geom_smooth()` to add a trendline.
+Click **Run** and inspect the results.
+
 ```{r gapminder_11, exercise=TRUE, exercise.setup = "gapminder"}
 #Run the following code
 ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp)) + 
@@ -1310,11 +1548,16 @@ ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp)) +
 ```
 
 ### Adding Color
-And here's another great way to customize our graph, by adding color. `aes()` is short for aesthetics so let's put `color` in that function call within the `ggplot()` function. Let's set `color = continent` so that color is associated with the continent variable. 
 
-In the script below, set color equal to continent. 
+And here's another great way to customize our graph, by adding color.
+`aes()` is short for aesthetics so let's put `color` in that function call within the `ggplot()` function.
+Let's set `color = continent` so that color is associated with the continent variable.
 
-You can click **Solution** if you get stuck. Once complete **Run** and then **Submit** your code. Inspect the results.
+In the script below, set color equal to continent.
+
+You can click **Solution** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+Inspect the results.
 
 ```{r gapminder_12b}
 glimpse(gapminder_2007)
@@ -1335,16 +1578,23 @@ grade_code()
 ```
 
 ### More Aesthetics
-Let's take a moment to consider other variables within this dataframe that we can **visualize**. Below we will are using `glimpse()` to look at `gapminder_2007` variables to help us think.
+
+Let's take a moment to consider other variables within this dataframe that we can **visualize**.
+Below we will are using `glimpse()` to look at `gapminder_2007` variables to help us think.
 
 ```{r gapminder_13a, include = TRUE}
 glimpse(gapminder_2007)
 ```
 
 ### More Aesthetics
-I think it makes sense to visualize the population size from`gapminder_2007`. One way to do that is by setting `size` is equal to `pop` inside of the `aes()` function after the `color` argument.
 
-You can click **Solution** if you get stuck. Once complete **Run** and then **Submit** your code. Inspect the results.
+I think it makes sense to visualize the population size from`gapminder_2007`.
+One way to do that is by setting `size` is equal to `pop` inside of the `aes()` function after the `color` argument.
+
+You can click **Solution** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+Inspect the results.
+
 ```{r gapminder_13_b, exercise=TRUE, exercise.setup = "gapminder"}
 #set size is equal to pop inside of aes()
 ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size = )) + geom_point()
@@ -1360,16 +1610,26 @@ grade_code()
 ```
 
 ### Points everywhere
-This is a lot information jammed into one graph! I am noticing a problem with some of my points. Take a moment to think about what might not be ideal about the plot and how you would change if you could magically alter the graph.
+
+This is a lot information jammed into one graph!
+I am noticing a problem with some of my points.
+Take a moment to think about what might not be ideal about the plot and how you would change if you could magically alter the graph.
+
 ```{r gapminder_14, exercise=TRUE, exercise.setup = "gapminder",exercise.eval=TRUE}
 #Run the following code
 ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size = pop)) + geom_point()
 ```
 
 ### Points everywhere
-The problem I am noticing is that many points overlap. ggplot2 has a way to fix that easily. Simply set the `alpha` argument to any value between 0 and 1. Make sure alpha is inside the `geom_point()` function since this is an argument specifically related to just the data points' characteristics. 
 
-In the code below set `alpha` to any value between 0 and 1 to see how that affects the graph. **Click Run** to inspect the graph. 
+The problem I am noticing is that many points overlap.
+ggplot2 has a way to fix that easily.
+Simply set the `alpha` argument to any value between 0 and 1.
+Make sure alpha is inside the `geom_point()` function since this is an argument specifically related to just the data points' characteristics.
+
+In the code below set `alpha` to any value between 0 and 1 to see how that affects the graph.
+**Click Run** to inspect the graph.
+
 ```{r gapminder_14_b, exercise=TRUE, exercise.setup = "gapminder"}
 #Set alpha equal to any number between 0 and 1
 ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size = pop)) + 
@@ -1377,7 +1637,10 @@ ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size
 ```
 
 ### Progress
-Amazing! Our exploratory graph is packed with information: life expectancy, GDP per capita, continents, and populations. 
+
+Amazing!
+Our exploratory graph is packed with information: life expectancy, GDP per capita, continents, and populations.
+
 ```{r gapminder_15, exercise=TRUE, exercise.setup = "gapminder",exercise.eval = TRUE}
 #Graph of gapminder_2007
 ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size = pop)) + 
@@ -1385,11 +1648,16 @@ ggplot(gapminder_2007,mapping = aes(x=gdpPercap,y=lifeExp,color = continent,size
 ```
 
 ### A graph walks into a Bar...
-There's so many types of graphs and we won't have time to cover them all. Let's try a bar graph. This time around, instead of using  `geom_point`, we will use `geom_col` which will produce bars(otherwise known as columns). 
 
-In the code below you will need to set the `x = continent` and `y = pop`. 
+There's so many types of graphs and we won't have time to cover them all.
+Let's try a bar graph.
+This time around, instead of using `geom_point`, we will use `geom_col` which will produce bars(otherwise known as columns).
 
-Don't forget you can use **Hints** if you get stuck. Once complete **Run** and then **Submit** your code.
+In the code below you will need to set the `x = continent` and `y = pop`.
+
+Don't forget you can use **Hints** if you get stuck.
+Once complete **Run** and then **Submit** your code.
+
 ```{r bar_1, exercise=TRUE, exercise.setup = "gapminder"}
 #Set x = continent and y = pop inside of aes()
 ggplot(gapminder_2007,mapping = aes(x= ,y= )) + geom_col()
@@ -1410,7 +1678,10 @@ grade_code()
 ```
 
 ### Scales
-Inspect the graph we made. What do you notice about the scales? Is this easy to comprehend?
+
+Inspect the graph we made.
+What do you notice about the scales?
+Is this easy to comprehend?
 
 ```{r bar_1_b}
 #Set x = continent and y = pop inside of aes()
@@ -1418,9 +1689,13 @@ ggplot(gapminder_2007,mapping = aes(x = continent,y= pop)) + geom_col()
 ```
 
 ### Cheat code
-I am going to give you an advanced cheat code to make the y value easier to interpret. Notice that I added a new line below `geom_col` that says `scale_y_continuous(labels = scales::comma)`. This *cheat code* converts the y-axis scale to a more understandable form. 
+
+I am going to give you an advanced cheat code to make the y value easier to interpret.
+Notice that I added a new line below `geom_col` that says `scale_y_continuous(labels = scales::comma)`.
+This *cheat code* converts the y-axis scale to a more understandable form.
 
 Click **Run** to see how the graph has changed.
+
 ```{r bar_2, exercise=TRUE, exercise.setup = "gapminder"}
 #Set x = continent and y = pop inside of aes()
 ggplot(gapminder_2007,mapping = aes(x = continent, y = pop)) + 
@@ -1431,6 +1706,7 @@ ggplot(gapminder_2007,mapping = aes(x = continent, y = pop)) +
 ```
 
 ### Pulling it all together
+
 ```{r ques_ggplot, echo = FALSE}
 question("What is the best format to make a graph that compares lifeExp to year specifically for the country of Albania?",
          answer('`ggplot(filter(gapminder, country == "Albania"),mapping = aes(x=year,y=lifeExp)) + geom_point()`', correct = TRUE),
@@ -1443,9 +1719,12 @@ question("What is the best format to make a graph that compares lifeExp to year 
 ```
 
 ### Great Job
-We had to use what we learned throughout this whole tutorial to nest functions, filter the gapminder dataframe, make a scatterplot, AND decide which variables should go where. Let's see the answer above graphed out now.  
+
+We had to use what we learned throughout this whole tutorial to nest functions, filter the gapminder dataframe, make a scatterplot, AND decide which variables should go where.
+Let's see the answer above graphed out now.
 
 `ggplot(filter(gapminder, country == "Albania"),mapping = aes(x=year,y=lifeExp)) + geom_point()`
+
 ```{r ques_ggplot_answer}
 #Now run our answer 
 ggplot(filter(gapminder, country == "Albania"),mapping = aes(x=year,y=lifeExp)) + 
@@ -1453,31 +1732,55 @@ ggplot(filter(gapminder, country == "Albania"),mapping = aes(x=year,y=lifeExp)) 
 ```
 
 ### Going Forward
-That's a wrap! You completed the R tutorial - congratulations! But, before you go I want to show you how you can continue learning and practicing at home.
+
+That's a wrap!
+You completed the R tutorial - congratulations!
+But, before you go I want to show you how you can continue learning and practicing at home.
 
 ## Where in the world is R?
+
 ### Incredible Job!
-You completed your training in the R-kitchen and served dinner. You might be asking yourself, how exactly can I cook at home like this? Keep reading!
+
+You completed your training in the R-kitchen and served dinner.
+You might be asking yourself, how exactly can I cook at home like this?
+Keep reading!
 
 ### Is this R?
-I know you might be wondering how in the world do I actually use R and where do I find it. Is it a website, is it a computer program, is what we are doing R? The answer is Yes. They are all R in some form. 
 
-![](images/meme_butterfly.jpg){#id .class width=100% height=100%}
+I know you might be wondering how in the world do I actually use R and where do I find it.
+Is it a website, is it a computer program, is what we are doing R?
+The answer is Yes.
+They are all R in some form.
+
+![](images/meme_butterfly.jpg){.class width="100%" height="100%"}
 
 ### RStudio Cloud quick tutorial
-The easiest way for anyone to pick up and start using R is by going to [Rstudio Cloud](https://rstudio.cloud/) for a cloud based version of the R program. In the video below I will show you how to quickly start doing that. Thanks for completing this tutorial and good luck on your JouRney!
+
+The easiest way for anyone to pick up and start using R is by going to [Rstudio Cloud](https://rstudio.cloud/) for a cloud based version of the R program.
+In the video below I will show you how to quickly start doing that.
+Thanks for completing this tutorial and good luck on your JouRney!
 ![Rstudio Cloud tutorial](https://youtu.be/zdiC4-ubqag)
 
 ### Expanding your knowledge
-There are many ways to learn more cool stuff in R. I would recommend checking out [Datacamp's R courses](https://www.datacamp.com/courses/free-introduction-to-r). The first chapter of all their courses is free and then you can choose to pay $25/mo to unlock all of the datacamp courses. It's where I learned most of what I know. 
+
+There are many ways to learn more cool stuff in R.
+I would recommend checking out [Datacamp's R courses](https://www.datacamp.com/courses/free-introduction-to-r).
+The first chapter of all their courses is free and then you can choose to pay \$25/mo to unlock all of the datacamp courses.
+It's where I learned most of what I know.
 
 Alternatively, you can learn R for free by going to your [Rstudio Cloud](https://rstudio.cloud/) and typing in the console `install.packages("swirl")` and then `library(swirl)`.
 
-[Rstudio Cloud](https://rstudio.cloud/) also has a lot of Guides and Primers to learn R. Check out the lefthand tabs on the Rstudio Cloud page for these guides and primers.
+[Rstudio Cloud](https://rstudio.cloud/) also has a lot of Guides and Primers to learn R.
+Check out the lefthand tabs on the Rstudio Cloud page for these guides and primers.
 
 ## Source
 
 ### Steal my code!
-This tutorial was written by Zach Margulies[(zjmarg@gmail.com)](mailto:zjmarg@gmail.com). You can find the source code for this tutorial [here](https://github.com/zjmarg/Interactive-R-tutorial/blob/main/webinar_1/webinar_1.Rmd). This tutorial is intended to be open-source, freely available to the public, and user-friendly. So please download the code, modify it, and make your own tutorial.  
 
-The inspiration for this tutorial came from many sources notably the brilliant teachers and coders at [Datacamp](https://learn.datacamp.com/) and the creators at the [learnr tutorials](https://rstudio.github.io/learnr/index.html). Special thanks to Gina, Alexandra, Jon, Joan, Sonney, Ricky, Amit, Dr. Cargill, Lin, and Nargis for your feedback, support, and kindness. 
+This tutorial was written by Zach Margulies[(zjmarg\@gmail.com)](mailto:zjmarg@gmail.com).
+You can find the source code for this tutorial [here](https://github.com/zjmarg/Interactive-R-tutorial/blob/main/webinar_1/webinar_1.Rmd).
+This tutorial is intended to be open-source, freely available to the public, and user-friendly.
+So please download the code, modify it, and make your own tutorial.
+
+The inspiration for this tutorial came from many sources notably the brilliant teachers and coders at [Datacamp](https://learn.datacamp.com/) and the creators at the [learnr tutorials](https://rstudio.github.io/learnr/index.html).
+Special thanks to Gina, Alexandra, Jon, Joan, Sonney, Ricky, Amit, Dr. Cargill, Lin, and Nargis for your feedback, support, and kindness.
