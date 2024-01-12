@@ -1777,10 +1777,10 @@ Check out the lefthand tabs on the Rstudio Cloud page for these guides and prime
 
 ### Steal my code!
 
-This tutorial was written by Zach Margulies[(zjmarg\@gmail.com)](mailto:zjmarg@gmail.com).
-You can find the source code for this tutorial [here](https://github.com/zjmarg/Interactive-R-tutorial/blob/main/webinar_1/webinar_1.Rmd).
+This tutorial was written by Zach Margulies[(zmarg1\@umbc.edu)](mailto:zmarg1@umbc.edu).
+You can find the source code for this tutorial [here](https://github.com/zmarg1/Interactive-R-tutorial/).
 This tutorial is intended to be open-source, freely available to the public, and user-friendly.
 So please download the code, modify it, and make your own tutorial.
 
-The inspiration for this tutorial came from many sources notably the brilliant teachers and coders at [Datacamp](https://learn.datacamp.com/) and the creators at the [learnr tutorials](https://rstudio.github.io/learnr/index.html).
+The inspiration for this tutorial came from many sources, notably the brilliant teachers and coders at [Datacamp](https://learn.datacamp.com/) and the creators at the [learnr tutorials](https://rstudio.github.io/learnr/index.html).
 Special thanks to Gina, Alexandra, Jon, Joan, Sonney, Ricky, Amit, Dr. Cargill, Lin, and Nargis for your feedback, support, and kindness.
